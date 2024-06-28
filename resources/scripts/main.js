@@ -197,77 +197,77 @@ Feature2.addEventListener("click", () => {
     <div class="chat-history">
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-            <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
+            <span class="user-name"><img src="http://statics.lol/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
             <span class="text">This is a Demo message for demonstration</span>
             <span class="timestamp">14:30</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-                <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
+                <span class="user-name"><img src="http://statics.lol/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
                 <span class="text">This is a demo response for demonstration</span>
                 <span class="timestamp">14:32</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-            <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
+            <span class="user-name"><img src="http://statics.lol/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
             <span class="text">This is a Demo message for demonstration</span>
             <span class="timestamp">14:34</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-                <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
+                <span class="user-name"><img src="http://statics.lol/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
                 <span class="text">This is a demo response for demonstration</span>
                 <span class="timestamp">14:36</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-            <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
+            <span class="user-name"><img src="http://statics.lol/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
             <span class="text">This is a Demo message for demonstration</span>
             <span class="timestamp">14:37</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/Art_of_Greatness_The_Flame_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-                <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
+                <span class="user-name"><img src="http://statics.lol/resources/images/Platinum_3_Rank.webp" alt="Rank">xSaIIaN#goat (EU)</span>
                 <span class="text">This is a demo response for demonstration</span>
                 <span class="timestamp">14:43</span>
             </div>
         </div>
         <div class="message received-message">
         <div class="avatar-container">
-            <img src="http://127.0.0.1:5500/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
+            <img src="http://statics.lol/resources/images/ChronoVoid_Card_Small.webp" alt="Avatar" class="avatar">
             <span class="online-icon"></span>
             </div>
             <div class="message-content">
-            <span class="user-name"><img src="http://127.0.0.1:5500/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
+            <span class="user-name"><img src="http://statics.lol/resources/images/Iron_3_Rank.webp" alt="Rank">DUCK#goat (EU)</span>
             <span class="text">This is a Demo message for demonstration</span>
             <span class="timestamp">14:45</span>
             </div>

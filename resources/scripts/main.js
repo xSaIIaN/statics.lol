@@ -365,23 +365,38 @@ Experience the convenience of managing your Valorant accounts like never before.
   );
 });
 
+
+// Get the latest release
 (async function () {
-  const apiUrl =
-    "https://api.github.com/repos/faheem-s27/Statics-Public/releases";
+  const apiUrl = "https://api.github.com/repos/faheem-s27/Statics-Public/releases";
 
   try {
     const response = await fetch(apiUrl);
+
     if (!response.ok) {
+      const downloadButton = document.querySelector(".button a");
+      downloadButton.href = "https://github.com/faheem-s27/Statics-Public/releases";
       throw new Error(`HTTP error! status: ${response.status}`);
     }
+
     const releases = await response.json();
 
     // Assuming releases are sorted by latest first (GitHub API default behavior)
     const latestRelease = releases[0]; // Get the latest release
+
+    if (!latestRelease) {
+      const downloadButton = document.querySelector(".button a");
+      downloadButton.href = "https://github.com/faheem-s27/Statics-Public/releases";
+      throw new Error("No releases found for the repository");
+    }
+
     const apkAsset = latestRelease.assets.find((asset) =>
       asset.name.endsWith(".apk")
     );
+
     if (!apkAsset) {
+      const downloadButton = document.querySelector(".button a");
+      downloadButton.href = "https://github.com/faheem-s27/Statics-Public/releases";
       throw new Error("No APK file found in the latest release");
     }
 
@@ -391,7 +406,7 @@ Experience the convenience of managing your Valorant accounts like never before.
     const downloadButton = document.querySelector(".button a");
     downloadButton.href = latestApkLink;
 
-    // console.log(`Latest APK link: ${latestApkLink}`);
+    console.log(`Latest APK link: ${latestApkLink}`);
   } catch (error) {
     console.error("Failed to fetch or parse releases:", error);
   }

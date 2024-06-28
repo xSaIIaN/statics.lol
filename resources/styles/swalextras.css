@@ -1,0 +1,258 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  width: 400px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  margin: 0 auto;
+  background-color: #1d1b1bbd; /* Change background color if needed */
+  border-radius: 5px;
+}
+
+/* Top section */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-section .username-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.top-section .username-selected {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fffdfd; /* Change username text color if needed */
+  margin: 0 10px;
+}
+
+.top-section .username {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fffdfd; /* Change username text color if needed */
+  margin: 0 10px;
+}
+/* Avatar */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Create a circular avatar */
+  background-size: cover;
+  margin-right: 5px;
+}
+
+/* Chat history */
+.chat-history {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.message .avatar {
+  margin-top: 5px; /* Adjust avatar position for alignment */
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+/* Avatar */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Create a circular avatar */
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.online-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  background-color: #3fd03f; /* Online indicator color */
+  border-radius: 50%;
+}
+
+.message .user-name {
+  font-weight: bold; /* Change to lighter font-weight */
+  font-size: 15px;
+  color: #ccc; /* Change username text color if needed */
+}
+
+.message .user-name img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.message .text {
+  margin-top: 0px; /* Add space between username and text */
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.message .timestamp {
+  position: absolute;
+  right: 540px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #ccc;
+  margin-top: 5px; /* Push timestamp to the right */
+}
+
+.message.user-message {
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+.message.user-message .message-content {
+  align-items: flex-end; /* Align user message content to the right */
+}
+
+.message.user-message .user-name {
+  text-align: right; /* Align username to the right for user messages */
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.send-message-label {
+  position: relative;
+  z-index: 2;
+  background: #1d1b1bbd; /* Same as chat window background */
+  padding: 0 5px; /* Adjust padding to create the cut effect */
+  margin-bottom: -7px; /* Move label slightly above the input border */
+  font-size: 12px;
+  width: 120px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.input-field {
+  position: relative;
+  z-index: 0; /* Ensure input field is below the label */
+  padding: 10px;
+  border: 3px solid #ddd;
+  color: #fff;
+  background: #1d1b1bbd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+.character-limit {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  text-align: right;
+  margin-right: 70px;
+}
+
+.send-button {
+  padding: 10px 20px; /* Adjust button padding as needed */
+  background-color: #cacdcf; /* Change button background color */
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 3.75em;
+  height: 3.5em;
+  position: absolute;
+  right: 40em;
+  bottom: 30px;
+}
+
+.send-button i {
+  color: rgb(81, 80, 80);
+  font-size: 1.5em;
+  margin: 0px -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .send-button {
+    right: 1em;
+    bottom: 1.15em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .send-button i {
+    font-size: 1.25em;
+  }
+
+  .input-field {
+    width: 60%;
+  }
+
+  .character-limit {
+    margin-right: 130px;
+  }
+
+  .timestamp {
+    margin-right: -60px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #ccc;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .send-button {
+    right: 1em;
+    bottom: 10em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .send-button i {
+    font-size: 1.25em;
+  }
+
+  .input-field {
+    width: 75%;
+  }
+
+  .character-limit {
+    margin-right: 80px;
+  }
+}
+
+
+@media screen and (min-width: 2000px) {
+  .timestamp {
+    margin-right: 510px;
+  }
+
+  .send-button {
+    margin-right: 39em;
+    margin-bottom: 21.5em;
+    width: 3.75em;
+    height: 3.5em;
+  }
+}

@@ -11,19 +11,433 @@
     />
     <meta content="https://statics.lol/" property="og:url" />
     <meta
-      content="./images/logo-embed.png"
+      content="https://statics.lol/resources/images/logo-embed.png"
       property="og:image"
     />
     <meta content="#d83131" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="shortcut icon" href="./images/logo-embed.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./resources/images/logo-embed.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="./resources/styles/swalextras.css" />
+    <script
+      src="https://kit.fontawesome.com/0ffba2298e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Statics - Valorant companion app" />
+    <meta
+      name="twitter:description"
+      content="Statics is a feature-rich Valorant companion app for Android, offering a seamless experience to track and share Valorant stats conveniently on mobile devices."
+    />
+    <meta
+      name="twitter:image"
+      content="https://statics.lol/resources/images/logo-embed.png"
+    />
+    <meta name="twitter:url" content="https://statics.lol/" />
+
+    <!-- LinkedIn -->
+    <meta property="og:title" content="Statics - Valorant companion app" />
+    <meta
+      property="og:description"
+      content="Statics is a feature-rich Valorant companion app for Android, offering a seamless experience to track and share Valorant stats conveniently on mobile devices."
+    />
+    <meta
+      property="og:image"
+      content="https://statics.lol/resources/images/logo-embed.png"
+    />
+    <meta property="og:url" content="https://statics.lol/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Statics" />
+    <meta name="description" content="Statics - Valorant companion app" />
+
+    <!-- Pinterest -->
+    <meta property="og:title" content="Statics - Valorant companion app" />
+    <meta
+      property="og:description"
+      content="Statics is a feature-rich Valorant companion app for Android, offering a seamless experience to track and share Valorant stats conveniently on mobile devices."
+    />
+    <meta
+      property="og:image"
+      content="https://statics.lol/resources/images/logo-embed.png"
+    />
+    <meta property="og:url" content="https://statics.lol/" />
   </head>
   <body>
-    <div class="container">
-        <h1>We're Building Something Great!</h1>
-        <p>Our site is currently under construction. We'll be here soon with our new awesome site.</p>
-        <p>Singed: xSaIIaN</p>
-        <div class="loader"></div>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Navbar toggle -->
+        <a href="#" class="navbar-brand" data-text="Statics"
+          ><img
+            src="./resources/images/logo-embed.png"
+            alt="Statics Logo"
+          />Statics</a
+        >
+        <ul class="navbar-menu">
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#developer">About</a></li>
+          <div class="social-media-mobile">
+            <a
+              href="https://github.com/faheem-s27/Statics-Public"
+              aria-label="Github"
+              data-social="github"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/staticsdeveloper/"
+              aria-label="Instagram"
+              data-social="instagram"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCOvqut4bb82LfC_k4r_y6gw"
+              aria-label="YouTube"
+              data-social="youtube"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a
+              href="https://discord.gg/statics-hub-1008474148760207431"
+              aria-label="Discord"
+              data-social="discord"
+              target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+          </div>
+        </ul>
+      </div>
+      <div class="navbar-toggle" class="hidden">
+        <label class="hamburger">
+          <input type="checkbox" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+      <div class="welcome-content">
+        <h1>
+          <span id="statics">Statics</span><span id="dash"> - </span
+          ><span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h1>
+        <p>
+          Statics is a feature-rich Valorant companion app for Android, offering
+          a seamless experience to track and share Valorant stats conveniently
+          on mobile devices. With over 10,000 downloads from the Google Play
+          Store, Statics stands out as a reliable tool for Valorant enthusiasts.
+        </p>
+        <button class="button">
+          <a>
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Download Statics</span>
+            </span>
+          </a>
+        </button>
+        <div class="scroll-down">
+          Scroll down to read more
+          <div class="pointer">&#9660;</div>
+        </div>
+        <div class="scroll-down-mobile">
+          Swipe down to read more
+          <div class="pointer">&#9660;</div>
+        </div>
+        <!-- Social Media Section -->
+        <ul class="social-media">
+          <li class="icon-content">
+            <a
+              href="https://github.com/faheem-s27/Statics-Public"
+              aria-label="GitHub"
+              data-social="github"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg version="1.1" viewBox="0 0 24 24" width="40" height="40">
+                <path
+                  d="M12,0.296c-6.628,0-12,5.372-12,12c0,5.301,3.438,9.799,8.205,11.387
+                  c0.599,0.111,0.82-0.26,0.82-0.577c0-0.285-0.01-1.04-0.015-2.04c-3.338,0.725-4.042-1.61-4.042-1.61
+                  c-0.546-1.387-1.333-1.756-1.333-1.756c-1.089-0.745,0.082-0.729,0.082-0.729c1.205,0.085,1.838,1.236,1.838,1.236
+                  c1.07,1.835,2.809,1.305,3.495,0.998c0.108-0.775,0.418-1.305,0.761-1.605c-2.665-0.303-5.467-1.332-5.467-5.931
+                  c0-1.311,0.469-2.382,1.236-3.221c-0.124-0.303-0.535-1.523,0.117-3.176c0,0,1.008-0.322,3.301,1.23
+                  c0.957-0.266,1.983-0.399,3.003-0.404c1.02,0.005,2.047,0.138,3.006,0.404c2.291-1.553,3.297-1.23,3.297-1.23
+                  c0.654,1.653,0.243,2.873,0.119,3.176c0.77,0.839,1.235,1.91,1.235,3.221c0,4.609-2.806,5.624-5.479,5.921
+                  c0.43,0.371,0.824,1.103,0.824,2.222c0,1.606-0.014,2.896-0.014,3.293c0,0.32,0.218,0.694,0.824,0.576
+                  C20.565,22.092,24,17.594,24,12.296C24,5.668,18.628,0.296,12,0.296z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">GitHub</div>
+          </li>
+          <li class="icon-content">
+            <a
+              href="https://www.instagram.com/staticsdeveloper/"
+              aria-label="Instagram"
+              data-social="instagram"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+                xml:space="preserve"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+          </li>
+          <li class="icon-content">
+            <a
+              href="https://www.youtube.com/channel/UCOvqut4bb82LfC_k4r_y6gw"
+              aria-label="YouTube"
+              data-social="youtube"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg version="1.1" viewBox="0 0 24 24" width="40" height="40">
+                <path
+                  d="M23.499,6.203c-0.272-1.047-1.065-1.87-2.066-2.118C19.3,3.5,12,3.5,12,3.5s-7.3,0-9.434,0.585
+                  c-1.002,0.248-1.794,1.07-2.066,2.118C0,8.43,0,12,0,12s0,3.57,0.499,5.797c0.272,1.047,1.065,1.87,2.066,2.118
+                  C4.7,20.5,12,20.5,12,20.5s7.3,0,9.434-0.585c1.002-0.248,1.794-1.07,2.066-2.118C24,15.57,24,12,24,12
+                  S24,8.43,23.499,6.203z M9.75,15.5v-7l6,3.5L9.75,15.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">YouTube</div>
+          </li>
+          <li class="icon-content">
+            <a
+              href="https://discord.gg/statics-hub-1008474148760207431"
+              aria-label="Discord"
+              data-social="discord"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg
+                viewBox="0 0 16 16"
+                class="bi bi-discord"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Discord</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <h2>App Features</h2>
+      <div class="features-container">
+        <div class="feature">
+          <img
+            src="./resources/images/feature-1.png"
+            alt="Statics x Riot Games Connection logo"
+          />
+          <p>
+            Log in with your Riot Games account to access your profile and
+            services. This login ensures secure and convenient access to your
+            games, progress, and community features provided by Riot Games.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-1" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+        <div class="feature">
+          <img
+            src="./resources/images/feature-2.png"
+            alt="Global Chat System"
+          />
+          <p>
+            Connect with gamers worldwide in a real-time environment using our
+            build-in chat system. Share strategies, seek advice, and socialize
+            within our integrated chat platform.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-2" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+        <div class="feature">
+          <img src="./resources/images/feature-3.png" alt="Match History" />
+          <p>
+            Access up to 100 past matches stored securely. Quickly retrieve and
+            review your gameplay history to track your progress. Check your
+            performance across various game modes.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-3" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="features-container">
+        <div class="feature">
+          <img
+            src="./resources/images/feature-4.png"
+            alt="Comprehensive Stat Tracking"
+          />
+          <p>
+            Monitor your performance across various game modes with detailed
+            metrics. Identify strengths and areas for improvement with ease.
+            Enhance your strategic planning and team coordination.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-4" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+        <div class="feature">
+          <img
+            src="./resources/images/feature-5.png"
+            alt="Interactive Minimap"
+          />
+          <p>
+            Visualize player positions and spike plants in real-time. Enhance
+            your strategic planning and team coordination. Identify strengths
+            and areas for improvement with ease.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-5" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+        <div class="feature">
+          <img
+            src="./resources/images/feature-6.png"
+            alt="Multi-Account Support"
+          />
+          <p>
+            Manage multiple Valorant accounts effortlessly. Switch between
+            accounts seamlessly without logging in and out. Keep track of your
+            progress across multiple Valorant accounts.
+          </p>
+          <!-- Read more -->
+          <button id="read-feature-6" class="read-btn">
+            <div class="read-sign"><i class="fa-solid fa-eye"></i></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="developer" class="about-section">
+      <div class="about-content">
+        <div class="developer-image">
+          <img
+            src="https://avatars.githubusercontent.com/u/63436748?v=4"
+            alt="Developer Image"
+          />
+        </div>
+        <h2>Faheem Saleem</h2>
+        <p>
+          Hello! I am the developer behind Statics. Driven by my passion for
+          Valorant and leveraging my coding expertise, I created this app
+          initially as a hobby project. I am always open to suggestions and
+          feedback to enhance its functionality. Thank you for your support and
+          love &#10084;
+        </p>
+        <div class="developer-social-media">
+          <a href="https://github.com/faheem-s27" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://play.google.com/store/apps/dev?id=8585883307284584529"
+            target="_blank"
+            ><i class="fab fa-google-play"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/faheem-saleem-6626aa21b/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://developers.google.com/profile/u/FaheemSaleem"
+            target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a href="https://www.instagram.com/faheem.s27/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.com/users/435817203246563338" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <a href="https://steamcommunity.com/id/faheem_s27/" target="_blank"
+            ><i class="fab fa-steam"></i
+          ></a>
+        </div>
+        <div class="donate-links">
+          <a href="https://buymeacoffee.com/statics" target="_blank"
+            >Donate via Buymeacoffee</a
+          >
+          <!-- <a href="https://www.paypal.com/donate/@FaheemDuck" target="_blank" disabled
+            >Donate via PayPal</a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <p>
+        <span class="disclaimer">
+          Statics isn't endorsed by Riot Games and doesn't reflect the views or
+          opinions of Riot Games or anyone officially involved in producing or
+          managing Riot Games properties. Riot Games, and all associated
+          properties are trademarks or registered trademarks of Riot Games, Inc.
+        </span>
+        © 2022 - <span id="year-footer"></span> Statics. All rights reserved. |
+        Designed with <span style="color: red">&#10084;</span> by
+        <a href="https://github.com/xSaIIaN" target="_blank">xSaIIaN</a>
+      </p>
+    </footer>
+
+    <a href="#welcome">
+      <button class="button-back">
+        <svg class="back-svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </button>
+    </a>
+
+    <script src="./resources/scripts/main.js"></script>
   </body>
 </html>
